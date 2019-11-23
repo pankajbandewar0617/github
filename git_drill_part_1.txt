@@ -1,0 +1,31 @@
+mkdir git_saample_project
+cd git_saample_project
+
+git init
+
+touch a.txt
+touch b.txt
+touch c.txt
+
+git add a.txt
+git add b.txt
+
+git commit -m "Add a.txt and b.txt"
+
+git status
+
+git log 
+
+git add c.txt
+git commit -m "add c.txt"
+
+git remote add github https://github.com/pankajbandewar0617/github.git
+git push github master
+git clone git_sample_project git_sample_project_2
+touch d.txt
+git commit -m "Add d.txt"
+git push origin master
+cd git_sample_project
+git pull github master
+
+
